@@ -1,0 +1,23 @@
+{
+  "name": "fzed51/debug-tool",
+  "description": "Boite \u0000 outil pour d\u0000bugger son code",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fabien Sanchez",
+      "email": "fzed51+git@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "scripts": {
+    "test": "php -d xdebug.remote_autostart=1  -d xdebug.remote_connect_back=1 -d xdebug.remote_enable=1 ./test/index.php"
+  },
+  "autoload": {
+    "files": [
+      "./src/dd.php",
+      "./src/trace.php"
+    ]
+  }
+}
